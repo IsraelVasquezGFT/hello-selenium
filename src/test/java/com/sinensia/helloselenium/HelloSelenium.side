@@ -1,0 +1,68 @@
+{
+  "id": "773d7c24-80a2-4da5-9975-b3be8e5b32d0",
+  "version": "2.0",
+  "name": "HelloSelenium",
+  "url": "https://www.imdb.com/",
+  "tests": [{
+    "id": "51698ea6-b4d9-41ac-ad54-2f30513be124",
+    "name": "HelloIMBD",
+    "commands": [{
+      "id": "18008160-7481-46e7-afa2-5cd9500cef11",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.imdb.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "291fc9ce-c913-4044-a3b7-ca551be818b1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1613x1023",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "737e6fc0-d78e-4e6b-b774-c5941c4cb417",
+      "comment": "",
+      "command": "type",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "el juego del calamar"
+    }, {
+      "id": "1f07e0fd-d0ac-4798-ba24-654bad015736",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ipc-media--custom > .ipc-image",
+      "targets": [
+        ["css=.ipc-media--custom > .ipc-image", "css:finder"],
+        ["xpath=//img[@alt='Squid Game']", "xpath:img"],
+        ["xpath=//li[@id='react-autowhatever-1--item-0']/a/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2785eff1-af27-40d5-a6cc-9877328c195b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fc23440f-3cfa-4533-8a05-f6abf45d0ca0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/", "https://www.imdb.com/"],
+  "plugins": []
+}
